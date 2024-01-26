@@ -8,7 +8,7 @@
     "ts:check": "tsc --noEmit",
     "dev": "tsx watch --clear-screen=false src/index.ts | pino-pretty",
     "build": "rimraf build && tsc",
-    "start": "NODE_ENV=production npm run build && tsx build/src/index.js",
+    "start": "NODE_ENV=production npm run build && tsx build/index.js",
     "lint": "eslint --fix --ext .ts,.js src/ tests/",
     "format": "prettier --write 'src/**/*.{ts,js,json}' 'tests/**/*.{ts,js,json}'",
     "test": "jest",
